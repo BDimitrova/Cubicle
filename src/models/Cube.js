@@ -24,6 +24,7 @@ class Cube {
             this.description = description,
             this.imageUrl = imageUrl,
             this.difficulty = difficulty
+            // this.canonicalName = name.replace(/ /g, '-').toLowarCase() - Make URL make-url-like-this
     };
 
     static getAll() {
