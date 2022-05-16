@@ -1,7 +1,7 @@
 const uniqId = require('uniqid');
 
 class Cube {
-    static #cubes = [
+    static cubes = [
         {
             id: '1gtvmbbmkl38h34ts',
             name: 'Mirror Cube',
@@ -24,15 +24,15 @@ class Cube {
             this.description = description,
             this.imageUrl = imageUrl,
             this.difficulty = difficulty
-    }
+    };
 
     static getAll() {
-        return Cube.#cubes.slice();
-    }
+        return Cube.cubes.slice();
+    };
 
     static add(cube) {
-        Cube.#cubes.push(cube);
-    }
+        Cube.cubes.push(cube);
+    };
 
 }
 

@@ -1,6 +1,6 @@
 const express = require('express');
 
-const cubeServices = require('../services/cubeServices')
+const cubeServices = require('../services/cubeServices');
 
 const router = express.Router();
 
@@ -11,7 +11,7 @@ const renderHome = (req, res) => {
 }
 
 const renderAbout = (req, res) => {
-    res.render('about')
+    res.render('about');
 }
 
 router.get('/', renderHome);
