@@ -10,6 +10,11 @@ const renderHome = (req, res) => {
     res.render('index', { cubes });
 }
 
+const renderAbout = (req, res) => {
+    res.render('about')
+}
+
 router.get('/', renderHome);
+router.get('/about', renderAbout);
 
 module.exports = router;
