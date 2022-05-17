@@ -15,7 +15,9 @@ const renderAbout = (req, res) => {
 }
 
 const renderSearch = (req, res) => {
-    let { search, from, to } = req.query;
+    let search = req.query.search;
+    let from = Number(req.query.from);
+    let to = Number(req.query.to);
 
     let cubes = cubeServices.search(search, from, to);
 
